@@ -28,7 +28,7 @@ graph TD
     %% Flow connections
     User -->|1. 发送消息/对话| FeishuBridge
     FeishuBridge -->|2. 转发请求至本地 Agent 接口| CodingAgent
-    CodingAgent -->|3. 发起 Chat 补全请求 (Anthropic 格式)| LiteLLM
+    CodingAgent -->|"3. 发起 Chat 补全请求 (Anthropic 格式)"| LiteLLM
     
     %% Routing logic
     LiteLLM -->|4a. 路由并格式化| DeepSeek
